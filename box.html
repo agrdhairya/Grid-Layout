@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grids</title>
+  <style>
+    .container {
+      background-color: #FBEAE7;
+      width: 1200px;
+      height: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 250px;    
+      gap: 10px;
+      padding: 10px;
+    }
+    #header {
+      grid-column: 1 / 4;
+      background-color: #C7F9CC;
+    }
+    #left {
+      background-color: #FFD6A5;
+    }
+    #middle {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+    }
+    #middle div {
+      background-color: #BDE0FE;
+    }
+    #right {
+      background-color: #FFADAD;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="header"></div>
+    <div id="left"></div>
+    <div id="middle">
+      <div></div>
+      <div></div>
+    </div>
+    <div id="right"></div>
+  </div>
+</body>
+
+</html>
